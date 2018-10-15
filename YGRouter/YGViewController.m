@@ -20,7 +20,7 @@
     self.view.backgroundColor = [UIColor cyanColor];
 }
 
-- (void)viewContrellerInitWithParameters:(NSDictionary *)parameters {
+- (void)initViewContrellerWithParameters:(NSDictionary *)parameters {
     NSDictionary *dict = parameters;
     NSString *title = [dict objectForKey:@"key"];
     self.title = title;

@@ -53,7 +53,7 @@
     
     // 如果parameters不为空
     if (parameters && parameters.allKeys.count) {
-        SEL selector = NSSelectorFromString(@"viewContrellerInitWithParameters:");
+        SEL selector = NSSelectorFromString(@"initViewContrellerWithParameters:");
 //        if (selector && [viewController respondsToSelector:selector]) {
 //            [viewController performSelector:selector withObject:parameters];
 //        }
