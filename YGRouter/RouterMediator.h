@@ -1,19 +1,16 @@
 //
-//  YGRouter.h
+//  RouterMediator.h
 //  YGRouter
 //
-//  Created by 孙星 on 2018/10/13.
+//  Created by 孙星 on 2018/10/21.
 //  Copyright © 2018 YOGURTS. All rights reserved.
+//
+//  路由中介者，使用代理实现
 //
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface YGRouter : NSObject
-
-/** shared instance */
-+ (YGRouter *)sharedInstance;
+@protocol YGRoute <NSObject>
 
 /** return ViewController without parameter */
 - (nullable UIViewController *)viewControllerWithURL:(nonnull NSString *)URL;
@@ -22,5 +19,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable UIViewController *)viewControllerWithURL:(nonnull NSString *)URL parameters:(nullable NSDictionary *)parameters;
 
 @end
-
-NS_ASSUME_NONNULL_END

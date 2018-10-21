@@ -16,6 +16,7 @@
 		78D58A322172276400AEA5FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A312172276400AEA5FF /* main.m */; };
 		78D58A3A2172278200AEA5FF /* YGRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A392172278200AEA5FF /* YGRouter.m */; };
 		78D58A3D21724C3E00AEA5FF /* YGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A3C21724C3E00AEA5FF /* YGViewController.m */; };
+		78FF78A7217CC42700D029BD /* YGRouteMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FF78A6217CC42700D029BD /* YGRouteMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		78D58A392172278200AEA5FF /* YGRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRouter.m; sourceTree = "<group>"; };
 		78D58A3B21724C3E00AEA5FF /* YGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGViewController.h; sourceTree = "<group>"; };
 		78D58A3C21724C3E00AEA5FF /* YGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGViewController.m; sourceTree = "<group>"; };
+		78FF78A4217CBF5600D029BD /* RouterMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterMediator.h; sourceTree = "<group>"; };
+		78FF78A5217CC42700D029BD /* YGRouteMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRouteMediator.h; sourceTree = "<group>"; };
+		78FF78A6217CC42700D029BD /* YGRouteMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRouteMediator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,9 @@
 				78D58A232172276300AEA5FF /* AppDelegate.m */,
 				78D58A252172276300AEA5FF /* ViewController.h */,
 				78D58A262172276300AEA5FF /* ViewController.m */,
+				78FF78A4217CBF5600D029BD /* RouterMediator.h */,
+				78FF78A5217CC42700D029BD /* YGRouteMediator.h */,
+				78FF78A6217CC42700D029BD /* YGRouteMediator.m */,
 				78D58A382172278200AEA5FF /* YGRouter.h */,
 				78D58A392172278200AEA5FF /* YGRouter.m */,
 				788AC20021738788009EAD61 /* YGBaseViewController.h */,
@@ -165,6 +172,7 @@
 				788AC20221738788009EAD61 /* YGBaseViewController.m in Sources */,
 				78D58A3A2172278200AEA5FF /* YGRouter.m in Sources */,
 				78D58A242172276300AEA5FF /* AppDelegate.m in Sources */,
+				78FF78A7217CC42700D029BD /* YGRouteMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
