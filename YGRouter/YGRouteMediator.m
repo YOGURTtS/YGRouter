@@ -13,24 +13,28 @@ static NSMutableDictionary *routersDict;
 
 @implementation YGRouteMediator
 
-- (BOOL)canOpenURL:(NSString *)URL {
+- (BOOL)canOpenURL:(NSURL *)URL {
     if (routersDict.allKeys.count == 0) {
         return NO;
     }
+    __block BOOL canOpenURL = NO;
     [routersDict enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id<YGRoute>  _Nonnull obj, BOOL * _Nonnull stop) {
         if ([obj respondsToSelector:@selector(canOpenURL:)]) {
-            
+            if ([obj canOpenURL:URL]) {
+                canOpenURL = YES;
+                *stop = YES;
+            }
         }
     }];
     
-    return NO;
+    return canOpenURL;
 }
 
-- (nullable UIViewController *)viewControllerWithURL:(nonnull NSString *)URL {
+- (nullable UIViewController *)viewControllerWithURL:(nonnull NSURL *)URL {
     return nil;
 }
 
-- (nullable UIViewController *)viewControllerWithURL:(nonnull NSString *)URL parameters:(nullable NSDictionary *)parameters {
+- (nullable UIViewController *)viewControllerWithURL:(nonnull NSURL *)URL parameters:(nullable NSDictionary *)parameters {
     return nil;
 }
 

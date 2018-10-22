@@ -6,16 +6,16 @@
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
-#import "YGRouter.h"
+#import "YGLoginRouter.h"
 
-@implementation YGRouter
+@implementation YGLoginRouter
 
 
-+ (YGRouter *)sharedInstance {
++ (YGLoginRouter *)sharedInstance {
     static dispatch_once_t onceToken;
-    static YGRouter *instance;
+    static YGLoginRouter *instance;
     dispatch_once(&onceToken, ^{
-        instance = [YGRouter new];
+        instance = [YGLoginRouter new];
     });
     return instance;
 }
@@ -35,6 +35,20 @@
     
     
     return viewController;
+}
+
+- (BOOL)canOpenURL:(NSURL *)URL {
+    
+}
+
+- (UIViewController *)viewControllerWithURL:(NSURL *)URL {
+    if ([URL isEqualToString:@""]) {
+        
+    }
+}
+
+- (UIViewController *)viewControllerWithURL:(NSURL *)URL parameters:(NSDictionary *)parameters {
+    
 }
 
 

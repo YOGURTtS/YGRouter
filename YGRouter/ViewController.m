@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "YGRouter.h"
+#import "YGLoginRouter.h"
 
 @interface ViewController ()
 
@@ -21,7 +21,7 @@
 }
 
 - (IBAction)buttonClicked:(UIButton *)sender {
-    YGRouter *router = [YGRouter sharedInstance];
+    YGLoginRouter *router = [YGLoginRouter sharedInstance];
     UIViewController *vc = [router viewControllerWithClassName:@"YGViewController" parameters:@{@"key" : @"value"}];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];

@@ -13,12 +13,12 @@
 @protocol YGRoute <NSObject>
 
 /** return BOOL value if router can open the URL */
-- (BOOL)canOpenURL:(nonnull NSString *)URL;
+- (BOOL)canOpenURL:(nonnull NSURL *)URL;
 
 /** return ViewController without parameter */
-- (nullable UIViewController *)viewControllerWithURL:(nonnull NSString *)URL;
+- (nullable UIViewController *)viewControllerWithURL:(nonnull NSURL *)URL;
 
 /** return ViewController with parameters */
-- (nullable UIViewController *)viewControllerWithURL:(nonnull NSString *)URL parameters:(nullable NSDictionary *)parameters;
+- (nullable UIViewController *)viewControllerWithURL:(nonnull NSURL *)URL parameters:(nullable NSDictionary *)parameters;
 
 @end

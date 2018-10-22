@@ -14,7 +14,7 @@
 		78D58A2C2172276400AEA5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D58A2B2172276400AEA5FF /* Assets.xcassets */; };
 		78D58A2F2172276400AEA5FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D58A2D2172276400AEA5FF /* LaunchScreen.storyboard */; };
 		78D58A322172276400AEA5FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A312172276400AEA5FF /* main.m */; };
-		78D58A3A2172278200AEA5FF /* YGRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A392172278200AEA5FF /* YGRouter.m */; };
+		78D58A3A2172278200AEA5FF /* YGLoginRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A392172278200AEA5FF /* YGLoginRouter.m */; };
 		78D58A3D21724C3E00AEA5FF /* YGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A3C21724C3E00AEA5FF /* YGViewController.m */; };
 		78FF78A7217CC42700D029BD /* YGRouteMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FF78A6217CC42700D029BD /* YGRouteMediator.m */; };
 /* End PBXBuildFile section */
@@ -33,8 +33,8 @@
 		78D58A2E2172276400AEA5FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78D58A302172276400AEA5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D58A312172276400AEA5FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		78D58A382172278200AEA5FF /* YGRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRouter.h; sourceTree = "<group>"; };
-		78D58A392172278200AEA5FF /* YGRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRouter.m; sourceTree = "<group>"; };
+		78D58A382172278200AEA5FF /* YGLoginRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGLoginRouter.h; sourceTree = "<group>"; };
+		78D58A392172278200AEA5FF /* YGLoginRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGLoginRouter.m; sourceTree = "<group>"; };
 		78D58A3B21724C3E00AEA5FF /* YGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGViewController.h; sourceTree = "<group>"; };
 		78D58A3C21724C3E00AEA5FF /* YGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGViewController.m; sourceTree = "<group>"; };
 		78FF78A4217CBF5600D029BD /* RouterMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterMediator.h; sourceTree = "<group>"; };
@@ -79,8 +79,8 @@
 				78FF78A4217CBF5600D029BD /* RouterMediator.h */,
 				78FF78A5217CC42700D029BD /* YGRouteMediator.h */,
 				78FF78A6217CC42700D029BD /* YGRouteMediator.m */,
-				78D58A382172278200AEA5FF /* YGRouter.h */,
-				78D58A392172278200AEA5FF /* YGRouter.m */,
+				78D58A382172278200AEA5FF /* YGLoginRouter.h */,
+				78D58A392172278200AEA5FF /* YGLoginRouter.m */,
 				788AC20021738788009EAD61 /* YGBaseViewController.h */,
 				788AC20121738788009EAD61 /* YGBaseViewController.m */,
 				78D58A3B21724C3E00AEA5FF /* YGViewController.h */,
@@ -170,7 +170,7 @@
 				78D58A3D21724C3E00AEA5FF /* YGViewController.m in Sources */,
 				78D58A322172276400AEA5FF /* main.m in Sources */,
 				788AC20221738788009EAD61 /* YGBaseViewController.m in Sources */,
-				78D58A3A2172278200AEA5FF /* YGRouter.m in Sources */,
+				78D58A3A2172278200AEA5FF /* YGLoginRouter.m in Sources */,
 				78D58A242172276300AEA5FF /* AppDelegate.m in Sources */,
 				78FF78A7217CC42700D029BD /* YGRouteMediator.m in Sources */,
 			);
