@@ -8,7 +8,23 @@
 
 #import "YGRouteMediator.h"
 
+/** 用于存放routers */
+static NSMutableDictionary *routersDict;
+
 @implementation YGRouteMediator
+
+- (BOOL)canOpenURL:(NSString *)URL {
+    if (routersDict.allKeys.count == 0) {
+        return NO;
+    }
+    [routersDict enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id<YGRoute>  _Nonnull obj, BOOL * _Nonnull stop) {
+        if ([obj respondsToSelector:@selector(canOpenURL:)]) {
+            
+        }
+    }];
+    
+    return NO;
+}
 
 - (nullable UIViewController *)viewControllerWithURL:(nonnull NSString *)URL {
     return nil;
