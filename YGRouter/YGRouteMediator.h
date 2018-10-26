@@ -7,12 +7,12 @@
 //
 
 #import "RouterMediator.h"
+#import "NSObject+YGSharedInstance.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YGRouteMediator : NSObject <YGRoute>
 
-+ (instancetype)sharedInstance;
 
 /** register ViewController's class */
 - (void)registRouter:(id<YGRoute>)router withURL:(NSURL *)URL;

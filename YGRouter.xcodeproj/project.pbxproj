@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		78424C132182B12F00420D49 /* YGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78424C122182B12F00420D49 /* YGLoginViewController.m */; };
+		78424C162183083C00420D49 /* YGRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78424C152183083C00420D49 /* YGRouter.m */; };
+		78424C1C21831D8E00420D49 /* NSObject+YGSharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 78424C1B21831D8E00420D49 /* NSObject+YGSharedInstance.m */; };
 		788AC20221738788009EAD61 /* YGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AC20121738788009EAD61 /* YGBaseViewController.m */; };
 		78D58A242172276300AEA5FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A232172276300AEA5FF /* AppDelegate.m */; };
 		78D58A272172276300AEA5FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A262172276300AEA5FF /* ViewController.m */; };
@@ -22,6 +24,10 @@
 /* Begin PBXFileReference section */
 		78424C112182B12F00420D49 /* YGLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGLoginViewController.h; sourceTree = "<group>"; };
 		78424C122182B12F00420D49 /* YGLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGLoginViewController.m; sourceTree = "<group>"; };
+		78424C142183083C00420D49 /* YGRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRouter.h; sourceTree = "<group>"; };
+		78424C152183083C00420D49 /* YGRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRouter.m; sourceTree = "<group>"; };
+		78424C1A21831D8E00420D49 /* NSObject+YGSharedInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YGSharedInstance.h"; sourceTree = "<group>"; };
+		78424C1B21831D8E00420D49 /* NSObject+YGSharedInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YGSharedInstance.m"; sourceTree = "<group>"; };
 		788AC1FD21737D1A009EAD61 /* YGPassValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGPassValue.h; sourceTree = "<group>"; };
 		788AC20021738788009EAD61 /* YGBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGBaseViewController.h; sourceTree = "<group>"; };
 		788AC20121738788009EAD61 /* YGBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGBaseViewController.m; sourceTree = "<group>"; };
@@ -76,9 +82,13 @@
 				78D58A232172276300AEA5FF /* AppDelegate.m */,
 				78D58A252172276300AEA5FF /* ViewController.h */,
 				78D58A262172276300AEA5FF /* ViewController.m */,
+				78424C1A21831D8E00420D49 /* NSObject+YGSharedInstance.h */,
+				78424C1B21831D8E00420D49 /* NSObject+YGSharedInstance.m */,
 				78FF78A4217CBF5600D029BD /* RouterMediator.h */,
 				78FF78A5217CC42700D029BD /* YGRouteMediator.h */,
 				78FF78A6217CC42700D029BD /* YGRouteMediator.m */,
+				78424C142183083C00420D49 /* YGRouter.h */,
+				78424C152183083C00420D49 /* YGRouter.m */,
 				78D58A382172278200AEA5FF /* YGLoginRouter.h */,
 				78D58A392172278200AEA5FF /* YGLoginRouter.m */,
 				788AC20021738788009EAD61 /* YGBaseViewController.h */,
@@ -168,10 +178,12 @@
 			files = (
 				78D58A272172276300AEA5FF /* ViewController.m in Sources */,
 				78424C132182B12F00420D49 /* YGLoginViewController.m in Sources */,
+				78424C1C21831D8E00420D49 /* NSObject+YGSharedInstance.m in Sources */,
 				78D58A322172276400AEA5FF /* main.m in Sources */,
 				788AC20221738788009EAD61 /* YGBaseViewController.m in Sources */,
 				78D58A3A2172278200AEA5FF /* YGLoginRouter.m in Sources */,
 				78D58A242172276300AEA5FF /* AppDelegate.m in Sources */,
+				78424C162183083C00420D49 /* YGRouter.m in Sources */,
 				78FF78A7217CC42700D029BD /* YGRouteMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
