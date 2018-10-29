@@ -25,14 +25,14 @@
 //    if ([router canOpenURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"]]) {
 //        [router pushToViewControllerWithURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"] parameters:@{@"key" : @"value"} fromViewController:self];
 //    }
-    router.
-    scheme(@"scheme").
-    host(@"Login").
-    path(@"login").
-    query(@"key1=value1").
-    params(@{@"key" : @"value"}).
-    from(self).
-    push;
+    router
+    .scheme(@"scheme")
+    .host(@"Login")
+    .path(@"login")
+    .query(@"key1=value1")
+    .params(@{@"key" : @"value"})
+    .from(self)
+    .push;
     
 }
 
