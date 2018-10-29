@@ -13,6 +13,7 @@
 
 + (id)sharedInstance {
     Class selfClass = [self class];
+    NSLog(@"%@", NSStringFromClass(selfClass));
     id instance = objc_getAssociatedObject(selfClass, @"kSharedInstance");
     if (!instance) {
         instance = [[selfClass alloc] init];

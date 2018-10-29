@@ -12,6 +12,8 @@
 @implementation YGRouter
 
 
+
+
 - (void)registClass:(Class)cla withURL:(NSURL *)URL {
     NSString *classStr = NSStringFromClass(cla);
     if (![self.viewControllerMap.keyEnumerator.allObjects containsObject:[NSString stringWithFormat:@"%@%@", URL.host, URL.path]]) {
@@ -80,8 +82,7 @@
 
 - (void)pushToViewControllerWithURL:(NSURL *)URL parameters:(NSDictionary *)parameters fromViewController:(nullable UIViewController *)viewController{
     
-    NSURL *object;
-    while (object = [self.viewControllerMap.keyEnumerator nextObject]) {
+    for (NSURL *object in self.viewControllerMap.keyEnumerator.allObjects) {
         if ([object.host isEqualToString:URL.host] && [object.path isEqualToString:URL.path]) {
             
             NSString *classStr = [self.viewControllerMap objectForKey:[NSURL URLWithString:[NSString stringWithFormat:@"%@://%@%@", URL.scheme, URL.host, URL.path]]];

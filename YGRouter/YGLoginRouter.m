@@ -12,7 +12,6 @@
 @implementation YGLoginRouter
 
 + (void)load {
-    NSLog(@"%@", [YGLoginRouter sharedInstance]);
     [[YGRouteMediator sharedInstance] registRouter:[YGLoginRouter sharedInstance] withURL:[NSURL URLWithString:@"scheme://Login"]];
 }
 

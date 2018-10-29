@@ -22,7 +22,9 @@
 
 - (IBAction)buttonClicked:(UIButton *)sender {
     YGRouteMediator *router = [YGRouteMediator sharedInstance];
-    [router pushToViewControllerWithURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"] parameters:@{@"key" : @"value"} fromViewController:self];
+    if ([router canOpenURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"]]) {
+        [router pushToViewControllerWithURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"] parameters:@{@"key" : @"value"} fromViewController:self];        
+    }
 }
 
 
