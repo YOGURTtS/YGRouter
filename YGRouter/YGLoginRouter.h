@@ -6,17 +6,11 @@
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
-#import "YGRouteMediator.h"
-#import "YGPassValue.h"
+#import "YGRouter.h"
 
 
-@interface YGLoginRouter : NSObject <YGRoute>
+@interface YGLoginRouter : YGRouter
 
-/** singleton instance */
-+ (YGLoginRouter *)sharedInstance;
-
-/** register ViewController's class */
-- (void)registClass:(Class)cla withURL:(NSURL *)URL;
 
 @end
 

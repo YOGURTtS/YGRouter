@@ -22,9 +22,9 @@
 
 - (IBAction)buttonClicked:(UIButton *)sender {
     YGRouteMediator *router = [YGRouteMediator sharedInstance];
-    UIViewController *vc = [router viewControllerWithURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"] parameters:@{@"key" : @"value"}];
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
+    if ([router canOpenURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"]]) {
+        [router pushToViewControllerWithURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"] parameters:@{@"key" : @"value"} fromViewController:self];        
+    }
 }
 
 

@@ -16,9 +16,9 @@
 - (BOOL)canOpenURL:(nonnull NSURL *)URL;
 
 /** return ViewController without parameter */
-- (nullable UIViewController *)viewControllerWithURL:(nonnull NSURL *)URL;
+- (void)pushToViewControllerWithURL:(nonnull NSURL *)URL fromViewController:(nullable UIViewController *)viewController;
 
 /** return ViewController with parameters */
-- (nullable UIViewController *)viewControllerWithURL:(nonnull NSURL *)URL parameters:(nullable NSDictionary *)parameters;
+- (void)pushToViewControllerWithURL:(nonnull NSURL *)URL parameters:(nullable NSDictionary *)parameters fromViewController:(nullable UIViewController *)viewController;
 
 @end

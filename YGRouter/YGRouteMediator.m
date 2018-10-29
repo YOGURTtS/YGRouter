@@ -13,7 +13,7 @@ static NSMutableDictionary *routersDict;
 
 @implementation YGRouteMediator
 
-+ (instancetype)sharedInstance {
++ (id)sharedInstance {
     static YGRouteMediator *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -46,27 +46,22 @@ static NSMutableDictionary *routersDict;
     return canOpenURL;
 }
 
-- (nullable UIViewController *)viewControllerWithURL:(nonnull NSURL *)URL {
+- (void)pushToViewControllerWithURL:(NSURL *)URL fromViewController:(nullable UIViewController *)viewController {
     if ([routersDict.allKeys containsObject:URL.host]) {
         id router = [routersDict objectForKey:URL.host];
-        if ([router respondsToSelector:@selector(viewControllerWithURL:)]) {
-            return [router viewControllerWithURL:URL];
+        if ([router respondsToSelector:@selector(pushToViewControllerWithURL:fromViewController:)]) {
+            [router pushToViewControllerWithURL:URL fromViewController:viewController];
         }
-        return nil;
     }
-    
-    return nil;
 }
 
-- (nullable UIViewController *)viewControllerWithURL:(nonnull NSURL *)URL parameters:(nullable NSDictionary *)parameters {
+- (void)pushToViewControllerWithURL:(NSURL *)URL parameters:(NSDictionary *)parameters fromViewController:(nullable UIViewController *)viewController{
     if ([routersDict.allKeys containsObject:URL.host]) {
         id router = [routersDict objectForKey:URL.host];
-        if ([router respondsToSelector:@selector(viewControllerWithURL: parameters:)]) {
-            return [router viewControllerWithURL:URL parameters:parameters];
+        if ([router respondsToSelector:@selector(pushToViewControllerWithURL:parameters:fromViewController:)]) {
+            [router pushToViewControllerWithURL:URL parameters:parameters fromViewController:viewController];
         }
-        return nil;
     }
-    return nil;
 }
 
 
