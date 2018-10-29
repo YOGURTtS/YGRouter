@@ -6,15 +6,18 @@
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
-#import "YGRouteMediator.h"
+#import "YGParentRouter.h"
 #import "YGPassValue.h"
 
 @interface YGRouter : NSObject <YGRoute>
 
+/** singleton */
++ (id)sharedInstance;
 
 /** register ViewController's class */
 - (void)registClass:(Class)cla withURL:(NSURL *)URL;
 
-@property (nonatomic, strong) NSMapTable *viewControllerMap;
+
+
 
 @end

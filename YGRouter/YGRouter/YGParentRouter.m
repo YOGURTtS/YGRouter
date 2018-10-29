@@ -6,18 +6,26 @@
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
-#import "YGRouteMediator.h"
+#import "YGParentRouter.h"
+#import "YGRouterModel.h"
 
 /** 用于存放routers */
 static NSMutableDictionary *routersDict;
 
-@implementation YGRouteMediator
+@interface YGParentRouter ()
+
+/** 路由模型 */
+@property (nonatomic, strong) YGRouterModel *routerModel;
+
+@end
+
+@implementation YGParentRouter
 
 + (id)sharedInstance {
-    static YGRouteMediator *instance;
+    static YGParentRouter *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [YGRouteMediator new];
+        instance = [YGParentRouter new];
         routersDict = [NSMutableDictionary dictionary];
     });
     return instance;
@@ -62,6 +70,63 @@ static NSMutableDictionary *routersDict;
             [router pushToViewControllerWithURL:URL parameters:parameters fromViewController:viewController];
         }
     }
+}
+
+#pragma mark - 闭包
+
+- (YGParentRouter *(^)(UIViewController *))from {
+    return ^(UIViewController *fromViewController) {
+        self.routerModel.from = fromViewController;
+        return [YGParentRouter sharedInstance];
+    };
+}
+
+- (YGParentRouter *(^)(NSString *))scheme {
+    return ^(NSString *URLScheme) {
+        self.routerModel.scheme = URLScheme;
+        return [YGParentRouter sharedInstance];
+    };
+}
+
+- (YGParentRouter *(^)(NSString *))host {
+    return ^(NSString *URLHost) {
+        self.routerModel.host = URLHost;
+        return [YGParentRouter sharedInstance];
+    };
+}
+
+- (YGParentRouter *(^)(NSString *))path {
+    return ^(NSString *URLPath) {
+        self.routerModel.path = URLPath;
+        return [YGParentRouter sharedInstance];
+    };
+}
+
+- (YGParentRouter *(^)(NSString *))query {
+    return ^(NSString *URLQuery) {
+        self.routerModel.query = URLQuery;
+        return [YGParentRouter sharedInstance];
+    };
+}
+
+- (YGParentRouter *(^)(NSDictionary *))params {
+    return ^(NSDictionary *paramsDict) {
+        self.routerModel.params = paramsDict;
+        return [YGParentRouter sharedInstance];
+    };
+}
+
+- (void)push {
+    [self pushToViewControllerWithURL:[self.routerModel formatPropertiesToURL] parameters:self.routerModel.params fromViewController:self.routerModel.from];
+}
+
+#pragma mark - lazy load
+
+- (YGRouterModel *)routerModel {
+    if (!_routerModel) {
+        _routerModel = [YGRouterModel new];
+    }
+    return _routerModel;
 }
 
 

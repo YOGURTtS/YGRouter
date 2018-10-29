@@ -12,6 +12,8 @@
 
 @protocol YGRoute <NSObject>
 
++ (id)sharedInstance;
+
 /** return BOOL value if router can open the URL */
 - (BOOL)canOpenURL:(nonnull NSURL *)URL;
 

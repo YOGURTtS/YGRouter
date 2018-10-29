@@ -9,9 +9,24 @@
 #import "YGRouter.h"
 #import <objc/runtime.h>
 
+@interface YGRouter ()
+
+@property (nonatomic, strong) NSMapTable *viewControllerMap;
+
+@end
+
+
 @implementation YGRouter
 
-
++ (id)sharedInstance {
+    Class selfClass = [self class];
+    id instance = objc_getAssociatedObject(selfClass, @"kSharedInstance");
+    if (!instance) {
+        instance = [[selfClass alloc] init];
+        objc_setAssociatedObject(selfClass, @"kSharedInstance", instance, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return instance;
+}
 
 
 - (void)registClass:(Class)cla withURL:(NSURL *)URL {
@@ -138,6 +153,8 @@ UIViewController * findBestNav(UIViewController * vc) {
 }
 
 
+
+
 #pragma mark - lazy load
 
 - (NSMapTable *)viewControllerMap {
@@ -146,5 +163,8 @@ UIViewController * findBestNav(UIViewController * vc) {
     }
     return _viewControllerMap;
 }
+
+
+
 
 @end

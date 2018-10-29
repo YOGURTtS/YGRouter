@@ -7,12 +7,13 @@
 //
 
 #import "YGLoginRouter.h"
-#import "YGRouteMediator.h"
+#import "YGParentRouter.h"
 
 @implementation YGLoginRouter
 
 + (void)load {
-    [[YGRouteMediator sharedInstance] registRouter:[YGLoginRouter sharedInstance] withURL:[NSURL URLWithString:@"scheme://Login"]];
+        
+    [[YGParentRouter sharedInstance] registRouter:[YGLoginRouter sharedInstance] withURL:[NSURL URLWithString:@"scheme://Login"]];
 }
 
 
