@@ -1,6 +1,6 @@
 //
 //  YGLoginViewController.m
-//  YGRouter
+//  YGModuleRouter
 //
 //  Created by yogurts on 2018/10/26.
 //  Copyright © 2018 YOGURTS. All rights reserved.

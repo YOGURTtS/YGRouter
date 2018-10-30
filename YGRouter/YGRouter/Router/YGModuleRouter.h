@@ -1,23 +1,20 @@
 //
-//  YGRouter.h
-//  YGRouter
+//  YGModuleRouter.h
+//  YGModuleRouter
 //
 //  Created by yogurts on 2018/10/26.
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
+//
+//
 
-#import "YGParentRouter.h"
+#import "YGCentralRouter.h"
 #import "YGPassValue.h"
 
-@interface YGRouter : NSObject <YGRoute>
-
-/** singleton */
-+ (id)sharedInstance;
+@interface YGModuleRouter : NSObject <YGRoute>
 
 /** register ViewController's class */
 - (void)registClass:(Class)cla withURL:(NSURL *)URL;
-
-
 
 
 @end

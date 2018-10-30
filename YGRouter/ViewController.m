@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  YGRouter
+//  YGModuleRouter
 //
 //  Created by 孙星 on 2018/10/13.
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "YGParentRouter.h"
+#import "YGCentralRouter.h"
 
 @interface ViewController ()
 
@@ -21,7 +21,7 @@
 }
 
 - (IBAction)buttonClicked:(UIButton *)sender {
-    YGParentRouter *router = [YGParentRouter sharedInstance];
+    YGCentralRouter *router = [YGCentralRouter sharedInstance];
 //    if ([router canOpenURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"]]) {
 //        [router pushToViewControllerWithURL:[NSURL URLWithString:@"scheme://Login/login?key1=value1"] parameters:@{@"key" : @"value"} fromViewController:self];
 //    }

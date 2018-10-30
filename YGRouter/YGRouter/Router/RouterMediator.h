@@ -1,17 +1,18 @@
 //
 //  RouterMediator.h
-//  YGRouter
+//  YGModuleRouter
 //
 //  Created by 孙星 on 2018/10/21.
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
-//  路由中介者，使用代理实现
+//  路由协议
 //
 
 #import <UIKit/UIKit.h>
 
 @protocol YGRoute <NSObject>
 
+/** singleton */
 + (id)sharedInstance;
 
 /** return BOOL value if router can open the URL */

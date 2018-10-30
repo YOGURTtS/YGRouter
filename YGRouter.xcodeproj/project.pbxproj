@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		78424C132182B12F00420D49 /* YGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78424C122182B12F00420D49 /* YGLoginViewController.m */; };
-		78424C162183083C00420D49 /* YGRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78424C152183083C00420D49 /* YGRouter.m */; };
+		78424C162183083C00420D49 /* YGModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78424C152183083C00420D49 /* YGModuleRouter.m */; };
 		78424C422186F59300420D49 /* YGRouterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78424C412186F59300420D49 /* YGRouterModel.m */; };
 		788AC20221738788009EAD61 /* YGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AC20121738788009EAD61 /* YGBaseViewController.m */; };
+		788F3F002188532D005ED028 /* YGModuleSevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F3EFF2188532D005ED028 /* YGModuleSevice.m */; };
+		788F3F0321885374005ED028 /* YGCentralSevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F3F0221885374005ED028 /* YGCentralSevice.m */; };
 		78D58A242172276300AEA5FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A232172276300AEA5FF /* AppDelegate.m */; };
 		78D58A272172276300AEA5FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A262172276300AEA5FF /* ViewController.m */; };
 		78D58A2A2172276300AEA5FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D58A282172276300AEA5FF /* Main.storyboard */; };
@@ -18,19 +20,24 @@
 		78D58A2F2172276400AEA5FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D58A2D2172276400AEA5FF /* LaunchScreen.storyboard */; };
 		78D58A322172276400AEA5FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A312172276400AEA5FF /* main.m */; };
 		78D58A3A2172278200AEA5FF /* YGLoginRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A392172278200AEA5FF /* YGLoginRouter.m */; };
-		78FF78A7217CC42700D029BD /* YGParentRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FF78A6217CC42700D029BD /* YGParentRouter.m */; };
+		78FF78A7217CC42700D029BD /* YGCentralRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FF78A6217CC42700D029BD /* YGCentralRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		78424C112182B12F00420D49 /* YGLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGLoginViewController.h; sourceTree = "<group>"; };
 		78424C122182B12F00420D49 /* YGLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGLoginViewController.m; sourceTree = "<group>"; };
-		78424C142183083C00420D49 /* YGRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRouter.h; sourceTree = "<group>"; };
-		78424C152183083C00420D49 /* YGRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRouter.m; sourceTree = "<group>"; };
+		78424C142183083C00420D49 /* YGModuleRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGModuleRouter.h; sourceTree = "<group>"; };
+		78424C152183083C00420D49 /* YGModuleRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGModuleRouter.m; sourceTree = "<group>"; };
 		78424C402186F59300420D49 /* YGRouterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRouterModel.h; sourceTree = "<group>"; };
 		78424C412186F59300420D49 /* YGRouterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRouterModel.m; sourceTree = "<group>"; };
 		788AC1FD21737D1A009EAD61 /* YGPassValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGPassValue.h; sourceTree = "<group>"; };
 		788AC20021738788009EAD61 /* YGBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGBaseViewController.h; sourceTree = "<group>"; };
 		788AC20121738788009EAD61 /* YGBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGBaseViewController.m; sourceTree = "<group>"; };
+		788F3EFD21882692005ED028 /* SeviceMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeviceMediator.h; sourceTree = "<group>"; };
+		788F3EFE2188532D005ED028 /* YGModuleSevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGModuleSevice.h; sourceTree = "<group>"; };
+		788F3EFF2188532D005ED028 /* YGModuleSevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGModuleSevice.m; sourceTree = "<group>"; };
+		788F3F0121885374005ED028 /* YGCentralSevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGCentralSevice.h; sourceTree = "<group>"; };
+		788F3F0221885374005ED028 /* YGCentralSevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGCentralSevice.m; sourceTree = "<group>"; };
 		78D58A1F2172276300AEA5FF /* YGRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YGRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D58A222172276300AEA5FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78D58A232172276300AEA5FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,8 +51,8 @@
 		78D58A382172278200AEA5FF /* YGLoginRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGLoginRouter.h; sourceTree = "<group>"; };
 		78D58A392172278200AEA5FF /* YGLoginRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGLoginRouter.m; sourceTree = "<group>"; };
 		78FF78A4217CBF5600D029BD /* RouterMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterMediator.h; sourceTree = "<group>"; };
-		78FF78A5217CC42700D029BD /* YGParentRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGParentRouter.h; sourceTree = "<group>"; };
-		78FF78A6217CC42700D029BD /* YGParentRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGParentRouter.m; sourceTree = "<group>"; };
+		78FF78A5217CC42700D029BD /* YGCentralRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGCentralRouter.h; sourceTree = "<group>"; };
+		78FF78A6217CC42700D029BD /* YGCentralRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGCentralRouter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +69,36 @@
 		78424C1D2186E58700420D49 /* YGRouter */ = {
 			isa = PBXGroup;
 			children = (
+				788F3EFB2188092E005ED028 /* Router */,
+				788F3EFC21880938005ED028 /* Protocol */,
+			);
+			path = YGRouter;
+			sourceTree = "<group>";
+		};
+		788F3EFB2188092E005ED028 /* Router */ = {
+			isa = PBXGroup;
+			children = (
 				78FF78A4217CBF5600D029BD /* RouterMediator.h */,
-				78FF78A5217CC42700D029BD /* YGParentRouter.h */,
-				78FF78A6217CC42700D029BD /* YGParentRouter.m */,
-				78424C142183083C00420D49 /* YGRouter.h */,
-				78424C152183083C00420D49 /* YGRouter.m */,
+				78FF78A5217CC42700D029BD /* YGCentralRouter.h */,
+				78FF78A6217CC42700D029BD /* YGCentralRouter.m */,
+				78424C142183083C00420D49 /* YGModuleRouter.h */,
+				78424C152183083C00420D49 /* YGModuleRouter.m */,
 				78424C402186F59300420D49 /* YGRouterModel.h */,
 				78424C412186F59300420D49 /* YGRouterModel.m */,
 			);
-			path = YGRouter;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		788F3EFC21880938005ED028 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				788F3EFD21882692005ED028 /* SeviceMediator.h */,
+				788F3F0121885374005ED028 /* YGCentralSevice.h */,
+				788F3F0221885374005ED028 /* YGCentralSevice.m */,
+				788F3EFE2188532D005ED028 /* YGModuleSevice.h */,
+				788F3EFF2188532D005ED028 /* YGModuleSevice.m */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		78D58A162172276300AEA5FF = {
@@ -188,11 +216,13 @@
 				78424C132182B12F00420D49 /* YGLoginViewController.m in Sources */,
 				78D58A322172276400AEA5FF /* main.m in Sources */,
 				788AC20221738788009EAD61 /* YGBaseViewController.m in Sources */,
+				788F3F0321885374005ED028 /* YGCentralSevice.m in Sources */,
 				78424C422186F59300420D49 /* YGRouterModel.m in Sources */,
 				78D58A3A2172278200AEA5FF /* YGLoginRouter.m in Sources */,
+				788F3F002188532D005ED028 /* YGModuleSevice.m in Sources */,
 				78D58A242172276300AEA5FF /* AppDelegate.m in Sources */,
-				78424C162183083C00420D49 /* YGRouter.m in Sources */,
-				78FF78A7217CC42700D029BD /* YGParentRouter.m in Sources */,
+				78424C162183083C00420D49 /* YGModuleRouter.m in Sources */,
+				78FF78A7217CC42700D029BD /* YGCentralRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

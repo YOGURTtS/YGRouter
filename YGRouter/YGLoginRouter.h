@@ -1,15 +1,15 @@
 //
-//  YGRouter.h
-//  YGRouter
+//  YGModuleRouter.h
+//  YGModuleRouter
 //
 //  Created by 孙星 on 2018/10/13.
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
-#import "YGRouter.h"
+#import "YGModuleRouter.h"
 
 
-@interface YGLoginRouter : YGRouter
+@interface YGLoginRouter : YGModuleRouter
 
 
 @end
