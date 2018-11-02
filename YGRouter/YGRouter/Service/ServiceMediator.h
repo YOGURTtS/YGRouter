@@ -10,12 +10,12 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol YGSevice <NSObject>
+@protocol YGService <NSObject>
 
 /** singleton */
 + (id)sharedInstance;
 
 /** return the class that obey the protocol */
-- (id)seviceWithProtocol:(Protocol *)protocol;
+- (Class)classWithProtocol:(Protocol *)protocol;
 
 @end

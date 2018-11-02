@@ -21,6 +21,7 @@ static NSMutableDictionary *routersDict;
 
 @implementation YGCentralRouter
 
+
 + (id)sharedInstance {
     static YGCentralRouter *instance;
     static dispatch_once_t onceToken;
@@ -104,14 +105,22 @@ static NSMutableDictionary *routersDict;
 
 - (YGCentralRouter *(^)(NSString *))query {
     return ^(NSString *URLQuery) {
-        self.routerModel.query = URLQuery;
+        if (self.routerModel.query.length) {
+            self.routerModel.query = [NSString stringWithFormat:@"%@&%@", self.routerModel.query, URLQuery];
+        } else {
+            self.routerModel.query = URLQuery;
+        }
         return [YGCentralRouter sharedInstance];
     };
 }
 
 - (YGCentralRouter *(^)(NSDictionary *))params {
     return ^(NSDictionary *paramsDict) {
-        self.routerModel.params = paramsDict;
+        if (self.routerModel.params.allKeys.count) {
+            [self.routerModel.params setValuesForKeysWithDictionary:paramsDict];
+        } else {
+            self.routerModel.params = [NSMutableDictionary dictionaryWithDictionary:paramsDict];
+        }
         return [YGCentralRouter sharedInstance];
     };
 }

@@ -23,7 +23,7 @@
 /** query参数字符串,形如key=value */
 @property (nonatomic, copy) NSString *query;
 /** 参数字典 */
-@property (nonatomic, strong) NSDictionary *params;
+@property (nonatomic, strong) NSMutableDictionary *params;
 
 /** 将URL相关组成拼接成URL */
 - (NSURL *)formatPropertiesToURL;

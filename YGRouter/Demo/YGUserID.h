@@ -1,13 +1,15 @@
 //
-//  YGModuleSevice.h
+//  YGUserID.h
 //  YGRouter
 //
-//  Created by yogurts on 2018/10/30.
+//  Created by yogurts on 2018/11/2.
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface YGModuleSevice : NSObject
+@protocol YGUserID <NSObject>
+
+- (NSString *)userId;
 
 @end
