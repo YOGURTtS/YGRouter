@@ -1,31 +1,32 @@
 //
 //  YGRouteMediator.m
-//  YGRouter
+//  YGModuleRouter
 //
 //  Created by 孙星 on 2018/10/21.
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
-#import "YGParentRouter.h"
+#import "YGCentralRouter.h"
 #import "YGRouterModel.h"
 
 /** 用于存放routers */
 static NSMutableDictionary *routersDict;
 
-@interface YGParentRouter ()
+@interface YGCentralRouter ()
 
 /** 路由模型 */
 @property (nonatomic, strong) YGRouterModel *routerModel;
 
 @end
 
-@implementation YGParentRouter
+@implementation YGCentralRouter
+
 
 + (id)sharedInstance {
-    static YGParentRouter *instance;
+    static YGCentralRouter *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [YGParentRouter new];
+        instance = [YGCentralRouter new];
         routersDict = [NSMutableDictionary dictionary];
     });
     return instance;
@@ -74,45 +75,53 @@ static NSMutableDictionary *routersDict;
 
 #pragma mark - 闭包
 
-- (YGParentRouter *(^)(UIViewController *))from {
+- (YGCentralRouter *(^)(UIViewController *))from {
     return ^(UIViewController *fromViewController) {
         self.routerModel.from = fromViewController;
-        return [YGParentRouter sharedInstance];
+        return [YGCentralRouter sharedInstance];
     };
 }
 
-- (YGParentRouter *(^)(NSString *))scheme {
+- (YGCentralRouter *(^)(NSString *))scheme {
     return ^(NSString *URLScheme) {
         self.routerModel.scheme = URLScheme;
-        return [YGParentRouter sharedInstance];
+        return [YGCentralRouter sharedInstance];
     };
 }
 
-- (YGParentRouter *(^)(NSString *))host {
+- (YGCentralRouter *(^)(NSString *))host {
     return ^(NSString *URLHost) {
         self.routerModel.host = URLHost;
-        return [YGParentRouter sharedInstance];
+        return [YGCentralRouter sharedInstance];
     };
 }
 
-- (YGParentRouter *(^)(NSString *))path {
+- (YGCentralRouter *(^)(NSString *))path {
     return ^(NSString *URLPath) {
         self.routerModel.path = URLPath;
-        return [YGParentRouter sharedInstance];
+        return [YGCentralRouter sharedInstance];
     };
 }
 
-- (YGParentRouter *(^)(NSString *))query {
+- (YGCentralRouter *(^)(NSString *))query {
     return ^(NSString *URLQuery) {
-        self.routerModel.query = URLQuery;
-        return [YGParentRouter sharedInstance];
+        if (self.routerModel.query.length) {
+            self.routerModel.query = [NSString stringWithFormat:@"%@&%@", self.routerModel.query, URLQuery];
+        } else {
+            self.routerModel.query = URLQuery;
+        }
+        return [YGCentralRouter sharedInstance];
     };
 }
 
-- (YGParentRouter *(^)(NSDictionary *))params {
+- (YGCentralRouter *(^)(NSDictionary *))params {
     return ^(NSDictionary *paramsDict) {
-        self.routerModel.params = paramsDict;
-        return [YGParentRouter sharedInstance];
+        if (self.routerModel.params.allKeys.count) {
+            [self.routerModel.params setValuesForKeysWithDictionary:paramsDict];
+        } else {
+            self.routerModel.params = [NSMutableDictionary dictionaryWithDictionary:paramsDict];
+        }
+        return [YGCentralRouter sharedInstance];
     };
 }
 

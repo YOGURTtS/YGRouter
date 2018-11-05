@@ -1,22 +1,22 @@
 //
-//  YGRouter.m
-//  YGRouter
+//  YGModuleRouter.m
+//  YGModuleRouter
 //
 //  Created by yogurts on 2018/10/26.
 //  Copyright © 2018 YOGURTS. All rights reserved.
 //
 
-#import "YGRouter.h"
+#import "YGModuleRouter.h"
 #import <objc/runtime.h>
 
-@interface YGRouter ()
+@interface YGModuleRouter ()
 
 @property (nonatomic, strong) NSMapTable *viewControllerMap;
 
 @end
 
 
-@implementation YGRouter
+@implementation YGModuleRouter
 
 + (id)sharedInstance {
     Class selfClass = [self class];
@@ -47,7 +47,7 @@
     return NO;
 }
 
-- (void)pushToViewControllerWithURL:(NSURL *)URL fromViewController:(nullable UIViewController *)viewController{
+- (void)pushToViewControllerWithURL:(NSURL *)URL fromViewController:(nullable UIViewController *)viewController {
     
     NSURL *object;
     while (object = [self.viewControllerMap.keyEnumerator nextObject]) {
@@ -95,7 +95,7 @@
 }
 
 
-- (void)pushToViewControllerWithURL:(NSURL *)URL parameters:(NSDictionary *)parameters fromViewController:(nullable UIViewController *)viewController{
+- (void)pushToViewControllerWithURL:(NSURL *)URL parameters:(NSDictionary *)parameters fromViewController:(nullable UIViewController *)viewController {
     
     for (NSURL *object in self.viewControllerMap.keyEnumerator.allObjects) {
         if ([object.host isEqualToString:URL.host] && [object.path isEqualToString:URL.path]) {
