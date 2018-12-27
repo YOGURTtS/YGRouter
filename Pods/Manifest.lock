@@ -1,0 +1,16 @@
+PODS:
+  - WoodPeckeriOS (1.1.4)
+
+DEPENDENCIES:
+  - WoodPeckeriOS
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WoodPeckeriOS
+
+SPEC CHECKSUMS:
+  WoodPeckeriOS: e12af9296607e7febefd52666d210cefdef1c44c
+
+PODFILE CHECKSUM: 34c3af0af5dcfa6b660fdf3e471057ad94416fd4
+
+COCOAPODS: 1.6.0.beta.2

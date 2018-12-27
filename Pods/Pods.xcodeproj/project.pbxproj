@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		04CC04C961BBAC3A21386805B7898A78 /* WoodPeckeriOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BCE66619951C4E4A57267010BFB12AC1 /* Build configuration list for PBXAggregateTarget "WoodPeckeriOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = WoodPeckeriOS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		7F973C1CB622CC5DB9BE5C8B3412A654 /* Pods-YGRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA78FA9E743D76EF92723D996350E7A /* Pods-YGRouter-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AAFAE81D9D5F2FC74F0B36D09B593EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CC04C961BBAC3A21386805B7898A78;
+			remoteInfo = WoodPeckeriOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26C6264368178D2FB3796BCC2413D356 /* Pods-YGRouter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YGRouter-frameworks.sh"; sourceTree = "<group>"; };
+		3BA78FA9E743D76EF92723D996350E7A /* Pods-YGRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YGRouter-dummy.m"; sourceTree = "<group>"; };
+		6894E625B372461F39FEDC6447124C52 /* WoodPeckeriOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WoodPeckeriOS.framework; sourceTree = "<group>"; };
+		96F38AC9E8C9487043D9D50A401DD437 /* Pods-YGRouter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YGRouter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9BB1062B70FEBEAD86C507E6CCB8518B /* Pods-YGRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YGRouter.release.xcconfig"; sourceTree = "<group>"; };
+		AFC948C7897B22EBEBF4FA9E078CE00A /* Pods-YGRouter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YGRouter-acknowledgements.plist"; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DC567CFC94A372CDBEDD39D9348ABD0D /* Pods-YGRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YGRouter.debug.xcconfig"; sourceTree = "<group>"; };
+		EB1D7CBF30CD7760D4D2830A5BEE36C3 /* WoodPeckeriOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WoodPeckeriOS.xcconfig; sourceTree = "<group>"; };
+		F96C743D6B93CBB588406641CB7B175D /* libPods-YGRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YGRouter.a"; path = "libPods-YGRouter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		598538398AD3448AEA8CC5312382F84A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				F8265B9A5694DCFA5457E74E057A61B2 /* Pods */,
+				890F585FA0A47A0EE0347B38DB1117AB /* Products */,
+				8F079905C2E2FDCF08AC16E19B640280 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		890F585FA0A47A0EE0347B38DB1117AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F96C743D6B93CBB588406641CB7B175D /* libPods-YGRouter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DDD81F349D69272172AE4F9DFA533F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB1D7CBF30CD7760D4D2830A5BEE36C3 /* WoodPeckeriOS.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WoodPeckeriOS";
+			sourceTree = "<group>";
+		};
+		8F079905C2E2FDCF08AC16E19B640280 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F03CA305C261287AB596429DB4893B8C /* Pods-YGRouter */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C364862E11B2D4CD2775A86D59ED203B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6894E625B372461F39FEDC6447124C52 /* WoodPeckeriOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C6BDA5794184579A9341492D27B58B /* WoodPeckeriOS */ = {
+			isa = PBXGroup;
+			children = (
+				C364862E11B2D4CD2775A86D59ED203B /* Frameworks */,
+				8DDD81F349D69272172AE4F9DFA533F5 /* Support Files */,
+			);
+			name = WoodPeckeriOS;
+			path = WoodPeckeriOS;
+			sourceTree = "<group>";
+		};
+		F03CA305C261287AB596429DB4893B8C /* Pods-YGRouter */ = {
+			isa = PBXGroup;
+			children = (
+				96F38AC9E8C9487043D9D50A401DD437 /* Pods-YGRouter-acknowledgements.markdown */,
+				AFC948C7897B22EBEBF4FA9E078CE00A /* Pods-YGRouter-acknowledgements.plist */,
+				3BA78FA9E743D76EF92723D996350E7A /* Pods-YGRouter-dummy.m */,
+				26C6264368178D2FB3796BCC2413D356 /* Pods-YGRouter-frameworks.sh */,
+				DC567CFC94A372CDBEDD39D9348ABD0D /* Pods-YGRouter.debug.xcconfig */,
+				9BB1062B70FEBEAD86C507E6CCB8518B /* Pods-YGRouter.release.xcconfig */,
+			);
+			name = "Pods-YGRouter";
+			path = "Target Support Files/Pods-YGRouter";
+			sourceTree = "<group>";
+		};
+		F8265B9A5694DCFA5457E74E057A61B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9C6BDA5794184579A9341492D27B58B /* WoodPeckeriOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE531CB2075FF7EE3D07D44CF7EA992F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B082CFBB0B5D0DED64F58B92C37CDBF0 /* Pods-YGRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5BCE1F5773BAD62C1DB1B7D46A08B94 /* Build configuration list for PBXNativeTarget "Pods-YGRouter" */;
+			buildPhases = (
+				AE531CB2075FF7EE3D07D44CF7EA992F /* Headers */,
+				A6B0E9D5A771744024B772EB9CDA9568 /* Sources */,
+				598538398AD3448AEA8CC5312382F84A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB82E37BF240C8E0BEFC0D4B2DABFD02 /* PBXTargetDependency */,
+			);
+			name = "Pods-YGRouter";
+			productName = "Pods-YGRouter";
+			productReference = F96C743D6B93CBB588406641CB7B175D /* libPods-YGRouter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 890F585FA0A47A0EE0347B38DB1117AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B082CFBB0B5D0DED64F58B92C37CDBF0 /* Pods-YGRouter */,
+				04CC04C961BBAC3A21386805B7898A78 /* WoodPeckeriOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6B0E9D5A771744024B772EB9CDA9568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F973C1CB622CC5DB9BE5C8B3412A654 /* Pods-YGRouter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB82E37BF240C8E0BEFC0D4B2DABFD02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WoodPeckeriOS;
+			target = 04CC04C961BBAC3A21386805B7898A78 /* WoodPeckeriOS */;
+			targetProxy = 4AAFAE81D9D5F2FC74F0B36D09B593EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08B0394D5F17A9F046DC0719C25BA452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1316772C0F07AF7AB77D8CE9790F8BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BB1062B70FEBEAD86C507E6CCB8518B /* Pods-YGRouter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22283C042071FCC98B1447B6C31BA7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC567CFC94A372CDBEDD39D9348ABD0D /* Pods-YGRouter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAC43C1B9706668B6D91E5D56ED69A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1D7CBF30CD7760D4D2830A5BEE36C3 /* WoodPeckeriOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBE0361B528E4E75FD5067149909102A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1D7CBF30CD7760D4D2830A5BEE36C3 /* WoodPeckeriOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E82C56363775B4EF468FF2AD9A2F5414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B0394D5F17A9F046DC0719C25BA452 /* Debug */,
+				E82C56363775B4EF468FF2AD9A2F5414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCE66619951C4E4A57267010BFB12AC1 /* Build configuration list for PBXAggregateTarget "WoodPeckeriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE0361B528E4E75FD5067149909102A /* Debug */,
+				CAC43C1B9706668B6D91E5D56ED69A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5BCE1F5773BAD62C1DB1B7D46A08B94 /* Build configuration list for PBXNativeTarget "Pods-YGRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22283C042071FCC98B1447B6C31BA7FF /* Debug */,
+				1316772C0F07AF7AB77D8CE9790F8BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

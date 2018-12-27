@@ -23,9 +23,12 @@
 		78D58A322172276400AEA5FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A312172276400AEA5FF /* main.m */; };
 		78D58A3A2172278200AEA5FF /* YGLoginRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D58A392172278200AEA5FF /* YGLoginRouter.m */; };
 		78FF78A7217CC42700D029BD /* YGCentralRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FF78A6217CC42700D029BD /* YGCentralRouter.m */; };
+		7F4ABD842DBCF3FCAAC3D14F /* libPods-YGRouter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7699F67F90AD560D2E9CF7 /* libPods-YGRouter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A7699F67F90AD560D2E9CF7 /* libPods-YGRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YGRouter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CEEFC6069861035A0158DC7 /* Pods-YGRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGRouter.release.xcconfig"; path = "Target Support Files/Pods-YGRouter/Pods-YGRouter.release.xcconfig"; sourceTree = "<group>"; };
 		783AB299218BE84C007FE53F /* YGUserUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGUserUtils.h; sourceTree = "<group>"; };
 		783AB29A218BE84C007FE53F /* YGUserUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGUserUtils.m; sourceTree = "<group>"; };
 		783AB29C218BEBAE007FE53F /* YGLoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGLoginService.h; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		78FF78A4217CBF5600D029BD /* RouterMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterMediator.h; sourceTree = "<group>"; };
 		78FF78A5217CC42700D029BD /* YGCentralRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGCentralRouter.h; sourceTree = "<group>"; };
 		78FF78A6217CC42700D029BD /* YGCentralRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGCentralRouter.m; sourceTree = "<group>"; };
+		CE469FECFDB49D9FACA2410D /* Pods-YGRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGRouter.debug.xcconfig"; path = "Target Support Files/Pods-YGRouter/Pods-YGRouter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4ABD842DBCF3FCAAC3D14F /* libPods-YGRouter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +141,8 @@
 			children = (
 				78D58A212172276300AEA5FF /* YGRouter */,
 				78D58A202172276300AEA5FF /* Products */,
+				9FF4E71F776521420C35B3D1 /* Pods */,
+				C0B8ED8817BAF6A4B85A1F66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +170,24 @@
 			path = YGRouter;
 			sourceTree = "<group>";
 		};
+		9FF4E71F776521420C35B3D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE469FECFDB49D9FACA2410D /* Pods-YGRouter.debug.xcconfig */,
+				2CEEFC6069861035A0158DC7 /* Pods-YGRouter.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0B8ED8817BAF6A4B85A1F66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A7699F67F90AD560D2E9CF7 /* libPods-YGRouter.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78D58A352172276400AEA5FF /* Build configuration list for PBXNativeTarget "YGRouter" */;
 			buildPhases = (
+				038256F7EFD26D4D91D23BD8 /* [CP] Check Pods Manifest.lock */,
 				78D58A1B2172276300AEA5FF /* Sources */,
 				78D58A1C2172276300AEA5FF /* Frameworks */,
 				78D58A1D2172276300AEA5FF /* Resources */,
+				7FA85C1487DCE1F6CEF9A8BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +255,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		038256F7EFD26D4D91D23BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YGRouter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FA85C1487DCE1F6CEF9A8BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YGRouter/Pods-YGRouter-frameworks.sh",
+				"${PODS_ROOT}/WoodPeckeriOS/WoodPeckeriOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WoodPeckeriOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YGRouter/Pods-YGRouter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78D58A1B2172276300AEA5FF /* Sources */ = {
@@ -386,10 +460,15 @@
 		};
 		78D58A362172276400AEA5FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE469FECFDB49D9FACA2410D /* Pods-YGRouter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ULCB2J6QA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YGRouter",
+				);
 				INFOPLIST_FILE = YGRouter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,10 +483,15 @@
 		};
 		78D58A372172276400AEA5FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CEEFC6069861035A0158DC7 /* Pods-YGRouter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ULCB2J6QA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YGRouter",
+				);
 				INFOPLIST_FILE = YGRouter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
